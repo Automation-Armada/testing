@@ -11,7 +11,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 bat 'docker --version'
-                    bat 'docker build -t clamav-demo .'
+                bat 'dir'
+                bat 'docker build -t clamav-demo .'
                 }
             }
         }
