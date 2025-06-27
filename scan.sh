@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "Escaneando archivo limpio..."
-dir
 clamscan  /sample_file.txt
 echo ""
 
