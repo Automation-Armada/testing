@@ -10,14 +10,14 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker --version'
-                sh 'docker build -t clamav-demo .'
+                bat 'docker --version'
+                bat 'docker build -t clamav-demo .'
             }
         }
 
         stage('Run Antivirus Scan') {
             steps {
-                sh 'docker run --rm clamav-demo'
+                bat 'docker run --rm clamav-demo'
             }
         }
 
