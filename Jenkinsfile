@@ -11,7 +11,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 bat 'docker --version'
-                    bat 'dir' // Esto te ayuda a debuguear si los archivos están realmente ahí
+                    bat 'ls' // Esto te ayuda a debuguear si los archivos están realmente ahí
                     bat 'docker build -t clamav-demo .'
                 }
             }
