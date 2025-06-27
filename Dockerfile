@@ -5,8 +5,8 @@ RUN apk update && \
     freshclam
 
 COPY scan.sh /scan.sh
-COPY sample_file.txt /sample_file.txt
-COPY virus.txt /virus.txt
+COPY ./sample_file.txt /sample_file.txt
+COPY ./virus.txt /virus.txt
 
 RUN chmod +x /scan.sh
 
