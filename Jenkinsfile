@@ -12,7 +12,7 @@ pipeline {
             steps {
                 bat 'docker --version'
                 bat 'dir'
-                bat 'docker build -t clamav-demo .'
+                bat 'docker build --no-cache -t clamav-demo .'
             }
         }
 
