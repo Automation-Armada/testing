@@ -10,6 +10,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
+                docker -version
                 sh 'docker build -t clamav-demo .'
             }
         }
