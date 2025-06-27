@@ -12,7 +12,6 @@ pipeline {
             steps {
                 bat 'docker --version'
                 bat 'docker build -t clamav-demo .'
-                }
             }
         }
 
@@ -28,3 +27,4 @@ pipeline {
             }
         }
     }
+}
