@@ -10,4 +10,4 @@ COPY virus.txt /virus.txt
 
 RUN chmod +x /scan.sh
 
-CMD ["./scan.sh"]
+CMD ["sh", "/scan.sh"]
