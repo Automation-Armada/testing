@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Automation-Armada/testing', credentialsId: 'github-token-cred'
+                git url: 'https://github.com/Automation-Armada/testing.git', credentialsId: 'github-token-cred'
             }
         }
 
